@@ -1,0 +1,15 @@
+{
+  "name": "cordova-plugin-proximity-wake",
+  "version": "0.1.0",
+  "description": "Cordova Proximity Screen On/Off Plugin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nikunj-Jain/Cordova-plugin-Proximity-Wake.git"
+  },
+  "author": "Nikunj Jain <njnikjay@gmail.com>",
+  "license": "apache",
+  "bugs": {
+    "url": "https://github.com/Nikunj-Jain/Cordova-plugin-Proximity-Wake/issues"
+  },
+  "homepage": "https://github.com/Nikunj-Jain/Cordova-plugin-Proximity-Wake#readme"
+}
