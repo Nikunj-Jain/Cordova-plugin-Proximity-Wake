@@ -42,11 +42,13 @@ public class ProximityWake extends CordovaPlugin {
     @Override
     public boolean execute(String action, final JSONArray args, CallbackContext callbackContext) {
 
-        if (action.equals("requestFocus")) {
+        Log.i(TAG, TAG + " called with " + action);
+
+        if (action.equals("activate")) {
             savedCallbackContext = callbackContext;
             activateSensor();
             return true;
-        } else if (action.equals("dumpFocus")) {
+        } else if (action.equals("deactivate")) {
             savedCallbackContext = callbackContext;
             deactivateSensor();
             return true;
@@ -75,6 +77,12 @@ public class ProximityWake extends CordovaPlugin {
             mWakeLock.release();
         }
         returnCallback(true, "Deactivated");
+    }
+
+
+    @Override
+    public void onDestroy() {
+        deactivateSensor();
     }
 
     private void returnCallback(boolean success, String message) {
