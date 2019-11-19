@@ -9,7 +9,7 @@ exports.deactivateSensor = function(success, error) {
     setSensorMode("deactivate", success, error);
 };
 
-private function setSensorMode(modeStr, success, error) {
+function setSensorMode(modeStr, success, error) {
     success = success || function() { };
     error = error || function() { };
 
