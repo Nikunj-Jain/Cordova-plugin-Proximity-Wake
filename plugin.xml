@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="com.thenikunj.cordova.plugins.ProximityWake" version="0.1.0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+<plugin id="com.thenikunj.cordova.plugins.proximitywake" version="0.1.0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns="http://apache.org/cordova/ns/plugins/1.0">
     <name>ProximityWake</name>
     <DESCRIPTION>Cordova plugin to turn screen on / off based on proximity sensor reading</DESCRIPTION>
     <js-module name="ProximityWake" src="www/ProximityWake.js"><clobbers target="window.ProximityWake"/></js-module>
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
-            <feature name="ProximityWake"><param name="android-package" value="com.thenikunj.cordova.plugins.ProximityWake"/></feature>
+            <feature name="ProximityWake"><param name="android-package" value="com.thenikunj.cordova.plugins"/></feature>
             <uses-permission android:name="android.permission.WAKE_LOCK"/>
         </config-file>
         <config-file parent="/*" target="AndroidManifest.xml"></config-file><source-file src="src/android/ProximityWake.java" target-dir="src/com/thenikunj/cordova/plugins/ProximityWake"/></platform>
